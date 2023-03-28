@@ -6,7 +6,7 @@ function PokemonCard() {
 
   return (
     <figure>
-        {Mokepon.hasOwnProperty("imgSrc") ? <img src={Mokepon.imgSrc}></img> : <p>???</p>}
+        {Mokepon.hasOwnProperty("imgSrc") ? <img src={Mokepon.imgSrc} alt={Mokepon.name}></img> : <p>???</p>}
         <figcaption>{Mokepon.name}</figcaption>
     </figure>
   );
