@@ -6,7 +6,6 @@ import PokemonCard from './components/PokemonCard'
 
 function App() {
 
-  let Mokepon = pokemonList[0];
 
 const pokemonList = [
   {
@@ -21,7 +20,7 @@ const pokemonList = [
 
   return (
     <div className="App">
-     <PokemonCard Mokepon={Mokepon} />
+     <PokemonCard Mokepon={pokemonList[0]} />
     </div>
   )
 }
