@@ -1,14 +1,18 @@
 
 const NavBar = ({pokemonList, pokemonIndex, setPokemonIndex}) => {
     
+    
 
     const handlePrev = () => {
-      setPokemonIndex(pokemonIndex -1)
+      setPokemonIndex(pokemonIndex -1);
     }
 
     const handleNext = () => {
       setPokemonIndex( pokemonIndex +1)
     }
+
+    pokemonList[pokemonIndex].name === "pikachu" ? alert("pika pikachu !!!"): null;
+    
     return(
       <nav className='NavBar'>
       {pokemonIndex > 0 ? <button onClick={handlePrev}>précédent</button> : <p>no previous Mokepon!</p>}
