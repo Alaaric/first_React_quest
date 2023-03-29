@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function PokemonCard({Mokepon}) {
   
-
+console.log(Mokepon)
   return (
     <figure>
         {Mokepon.hasOwnProperty("imgSrc") ? <img src={Mokepon.imgSrc} alt={Mokepon.name}></img> : <p>???</p>}
